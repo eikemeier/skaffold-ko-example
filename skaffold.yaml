@@ -1,0 +1,8 @@
+apiVersion: skaffold/v4beta5
+kind: Config
+build:
+  artifacts:
+    - image: docker.io/fillmorelabs/skaffold-ko-example
+      ko: {}
+  local:
+    push: true
